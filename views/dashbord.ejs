@@ -1,0 +1,23 @@
+<%-include("partials/header"); -%>
+<% posts.forEach(function(post){%>
+
+
+  <% if(post.studentdetail.length >= 1) {%>
+
+    <form class="" action="/faculitysubmit" method="post">
+     <label for=""> Student Name </label>
+     <input type="text" name="" value="<%= post.studentdetail[0].name1 %>" readonly>
+     <label for=""> partener Name </label>
+      <input type="text" name="" value="<%= post.studentdetail[0].name2 %>" readonly>
+     <label for="">mobile number </label>
+     <input type="text" name="" value="<%= post.studentdetail[0].mobilenumber %>" readonly>
+     <button type="submit" name="accept" value="<%=post._id%>">Accept</button>
+     <button type="submit" name="rejected" value="<%=post._id %>"> Rejected </button>
+
+   </form>
+
+  <% } %>
+
+
+<%}); %>
+<%-include("partials/footer");-%>

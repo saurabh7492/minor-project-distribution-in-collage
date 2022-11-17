@@ -1,0 +1,38 @@
+<%-include("partials/header"); -%>
+<style media="screen">
+  body {
+    background-image: url("images/dom.jpg");
+    < !-- background-size: cover;
+
+    background-repeat: no-repeat;
+    -->
+    /* Full height */
+    height: 100% 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  html {
+    height:100%
+  }
+</style>
+<div class="container">
+   <div class="row">
+     <div class="w-50 h-50 mt-5 p-5 offset-md-8">
+<h1 class="text-center  font-weight-bold "> faculity register page </h1>
+<form class=" card p-3 bg-light" action="/register" method="post">
+  <div class=" form-group">
+  <label for=""> Email</label>
+  <input  class="form-control"type="text" name="username" value="">
+  </div>
+  <div class="form-group">
+  <label for="">password</label>
+  <input class="form-control" type="password" name="password" value="">
+  </div>
+  <!-- <label for="">mobilenumber</label>
+  <input type="number" name="mnumber" value=""> -->
+  <button type="submit" class="btn btn-secondary" name="button">submit</button>
+</form>
+
+<%-include("partials/footer"); -%>

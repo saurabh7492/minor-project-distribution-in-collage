@@ -1,0 +1,77 @@
+<%-include("partials/header"); -%>
+
+<!-- <a href="/dashbord">Dashbord</a> -->
+<!-- <style media="screen">
+  .container{
+    border:5px solid black;
+  }
+</style> -->
+<div class="row  py-0 px-0">
+  <div class="col ">
+    <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg bg-light  " >
+      <a href="#" class="navbar-brand">
+        <img class="img-fluid" height="40px" width="40px" src="images/manipal_university_logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active ml-1rem"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item "><a  class="nav-link"href="/dashbord">Dashbord</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Project Detail </a></li>
+          <li class="nav-item"><a href="#" class="nav-link"> Your Project </a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  <h1 class="mt-5 p-5 text-center"> Enter Your Project Details  </h1>
+<div class="row  py-3">
+
+<!--
+<h1 class="py-3 text-center"> Enter Your Project Details  </h1> -->
+<div class="col">
+
+<form class="card p-3 bg-light" action="/" method="post">
+  <div class="form-group">
+  <label for="">Your Name </label>
+  <input class="form-control"  type="text" name="faculitySchema" value="" required>
+  </div>
+  <div class="form-group">
+  <label for="">Degination</label>
+  <input class="form-control" type="text" name="deg" value="" required>
+  </div>
+  <div class="form-group">
+  <label for="">Enter your mobile number </label>
+  <input class="form-control" type="tel" name="tel" value="" required>
+  </div>
+  <div class="form-group">
+  <label for="">ProjectTitle</label>
+  <input class="form-control" type="text" name="ptitle" value="" required>
+  </div>
+  <div class="form-group">
+
+  <label for="">BriefDescription</label>
+  <textarea class="form-control" type="text" name="bd" value="" row="8" required></textarea>
+  </div>
+  <div class="form-group">
+  <label for="">objective Of Project</label>
+  <textarea class="form-control" type="text" name="OProject" value=""> </textarea>
+  </div>
+  <div class="form-group">
+  <label for="">Skill expected From the Student for Project</label>
+  <textarea class="form-control" type="text" name="skillRequired" value="" required></textarea>
+  </div>
+  <button class="btn btn-outline-dark" type="submit" name="button"> submit</button>
+  <!-- <a href="/logout" role="button"> logout</a> -->
+</form>
+<!-- <a href="/dashbord">dashbord</a> -->
+</div>
+</div>
+</div>
+
+<%-include("partials/footer");-%>
